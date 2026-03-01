@@ -1,5 +1,18 @@
 require('blink.cmp').setup({
   fuzzy = { implementation = "lua" },
+  keymap = { preset = 'default',
+
+  },
+  completion = {
+	list = {
+		selection = {
+--			preselect = false,
+		},
+	}
+  },
+  sources = {
+    default = { 'lsp', 'path', 'snippets', 'buffer' },
+  },
   enabled = function()
     -- Disable in cmdline/search mode
     return vim.bo.buftype ~= 'prompt' and vim.fn.getcmdline() == ''
