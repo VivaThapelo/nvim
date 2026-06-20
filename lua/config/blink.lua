@@ -1,8 +1,6 @@
 require('blink.cmp').setup({
   fuzzy = { implementation = "lua" },
-  keymap = { preset = 'default',
-
-  },
+  keymap = { preset = 'default' },
   completion = {
 	list = {
 		selection = {

@@ -13,6 +13,6 @@ return {
         vim.lsp.config("lua_ls", {
             settings = { Lua = { diagnostics = { globals = { "vim" } } } },
         })
-        vim.lsp.enable({ "zls", "lua_ls", "pyright", "ts_ls", "angular_ls" })
+        vim.lsp.enable({ "zls", "lua_ls", "pyright", "ts_ls", "angularls" })
     end,
 }
